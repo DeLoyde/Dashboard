@@ -11,8 +11,8 @@ import streamlit as st
 st.set_page_config(page_title="Precipitation and TTC bus delays", page_icon="🌧️", layout="wide")
 
 pages = st.navigation([
-    st.Page("precipitation_delays.py", title="Precipitation & weather delays", icon="🌧️", default=True),
+    st.Page("bus_delay_eda.py", title="Bus delay EDA (pre-2025)", icon="🚌", default=True),
+    st.Page("precipitation_delays.py", title="Precipitation & weather delays", icon="🌧️"),
     st.Page("prediction_comparison.py", title="Predicted vs actual delays", icon="🎯"),
-    st.Page("bus_delay_eda.py", title="Bus delay EDA (pre-2025)", icon="🚌"),
 ])
 pages.run()
